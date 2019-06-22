@@ -5,3 +5,24 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  align-items: center;
+  background-color: #2C2141;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.card {
+  background-color: #F8F8F8;
+  border-radius: 16px;
+  max-width: 624px;
+  padding: 32px;
+}
+
+.person__header {
+  font-family: Arial, Helvetica, sans-serif;
+}
