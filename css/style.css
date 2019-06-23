@@ -21,8 +21,18 @@ body {
   border-radius: 16px;
   max-width: 624px;
   padding: 32px;
+  width: 100%;
+}
+
+.person {
+  display: flex;
+  align-items: flex-start;
 }
 
 .person__header {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.person__photo {
+  margin-right: 32px;
 }
