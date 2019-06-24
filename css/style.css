@@ -66,5 +66,7 @@ body {
 }
 
 .person__photo {
+  height: 148px;
   margin-right: 32px;
+  width: 148px;
 }
