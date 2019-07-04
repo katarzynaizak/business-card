@@ -70,3 +70,22 @@ body {
   margin-right: 32px;
   width: 148px;
 }
+
+@media screen and (max-width: 514px) {
+  .person {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .person__description {
+    margin-top: 16px;
+  }
+
+  .person__header {
+    text-align: center;
+  }
+
+  .person__photo {
+    margin: 0;
+  }
+}
