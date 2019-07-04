@@ -29,12 +29,21 @@ body {
 .person {
   align-items: flex-start;
   display: flex;
+  /* RWD flexboxem */
+  /* flex-wrap: wrap; */
 }
 
 .person__bio {
   line-height: 22px;
   margin: 0;
 }
+
+
+/* RWD flexboxem */
+/* .person__description {
+  flex-grow: 1;
+  flex-basis: 300px;
+} */
 
 .person__distinction {
   color: #ED6D05;
@@ -67,7 +76,7 @@ body {
 
 .person__photo {
   height: 148px;
-  margin-right: 32px;
+  margin: 0 32px 16px 0;
   width: 148px;
 }
 
@@ -75,10 +84,6 @@ body {
   .person {
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .person__description {
-    margin-top: 16px;
   }
 
   .person__header {
