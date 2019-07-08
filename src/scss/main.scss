@@ -1,0 +1,84 @@
+@import "_normalize";
+@import "_variables";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  background-color: #2C2141;
+  background-image: linear-gradient(135deg, #FEE140 0%, #FA709A 100%);
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.card {
+  background-color: #F8F8F8;
+  border-radius: 16px;
+  max-width: 624px;
+  padding: 32px;
+  width: 100%;
+}
+
+.person {
+  align-items: flex-start;
+  display: flex;
+  /* RWD flexboxem */
+  /* flex-wrap: wrap; */
+  &__bio {
+    line-height: 22px;
+    margin: 0;
+  }
+  /* RWD flexboxem */
+  /* &__description {
+    flex-grow: 1;
+    flex-basis: 300px;
+  } */
+  &__distinction {
+    color: $distinction;
+    font-weight: normal;
+  }
+  &__header {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 28px;
+    @media screen and (max-width: $vertical) {
+      text-align: center;
+    }
+  }
+  &__link {
+    color: $link;
+    text-decoration: none;
+  }
+  &__name {
+    font-size: 36px;
+    margin: 0;
+    font-weight: normal;
+  }
+  &__title {
+    color: #545454;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+  }
+  &__photo {
+    height: $photo;
+    margin: 0 32px 16px 0;
+    width: $photo;
+    @media screen and (max-width: $vertical) {
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: $vertical) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
