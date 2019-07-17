@@ -2,6 +2,13 @@
 @import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap&subset=latin-ext');
 
+@keyframes waves {
+  0% { border-radius: 30% 70% 70% 30%/30% 30% 70% 70%; }
+  25% { border-radius: 70% 30% 30% 70%/70% 70% 30% 30%; }
+  50% { border-radius: 30% 70% 70% 30%/30% 30% 70% 70%; }
+  100% { border-radius: 70% 30% 30% 70%/70% 70% 30% 30%; }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -70,16 +77,23 @@ body {
     font-style: italic;
     font-weight: normal;
   }
-  &__photo {
-    height: $photo;
-    margin: 0 32px 16px 0;
-    width: $photo;
-    @media screen and (max-width: $vertical) {
-      margin: 0;
-    }
-  }
   @media screen and (max-width: $vertical) {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+.photo {
+  margin: 0 32px 16px 0;
+  position: relative;
+  &__img {
+    animation: waves 30s infinite alternate ease-in-out;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    height: $photo;
+    width: $photo;
+    will-change: border-radius;
+  }
+  @media screen and (max-width: $vertical) {
+    margin: 0;
   }
 }
