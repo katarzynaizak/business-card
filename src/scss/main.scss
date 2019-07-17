@@ -20,7 +20,7 @@ html {
 body {
   align-items: center;
   background-color: #2C2141;
-  background-image: linear-gradient(135deg, #FEE140 0%, #FA709A 100%);
+  background-image: linear-gradient(135deg, $gradientStart 0%, $gradientEnd 100%);
   display: flex;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -76,6 +76,13 @@ body {
     font-size: 18px;
     font-style: italic;
     font-weight: normal;
+    -webkit-text-fill-color: transparent;
+    @supports(-webkit-background-clip:text) {
+      background: linear-gradient(to right,$gradientStart,$gradientEnd);
+      background-clip: text;
+      box-decoration-break: clone;
+      -webkit-text-fill-color: transparent;
+    }
   }
   @media screen and (max-width: $vertical) {
     flex-wrap: wrap;
