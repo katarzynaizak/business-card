@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "gulp build"
+    "predeploy": "gulp build",
+    "deploy" : "git push origin :page && git subtree split --prefix dist -b page && git subtree push --prefix dist origin page"
   },
   "repository": {
     "type": "git",
