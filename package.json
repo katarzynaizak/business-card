@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "predeploy": "gulp build",
-    "deploy" : "git push origin :page && git subtree split --prefix dist -b page && git subtree push --prefix dist origin page"
+    "deploy": "git-directory-deploy --directory _dist --branch page"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "autoprefixer": "^9.6.4",
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
+    "git-directory-deploy": "^1.5.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
