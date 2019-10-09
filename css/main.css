@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i&display=swap&subset=greek-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -348,6 +348,7 @@ body {
   display: flex;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: 400;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -365,6 +366,10 @@ body {
   padding: 32px;
   width: 100%; }
 
+.link {
+  color: #C0185D;
+  text-decoration: none; }
+
 .person {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -377,7 +382,7 @@ body {
     margin: 0; }
   .person__distinction {
     color: #ED6D05;
-    font-weight: normal; }
+    font-weight: 300; }
   .person__header {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 28px; }
@@ -385,17 +390,18 @@ body {
       .person__header {
         text-align: center; } }
   .person__link {
-    color: #3BB9EB;
+    color: #574996;
+    font-weight: 500;
     text-decoration: none; }
   .person__name {
     font-size: 36px;
     margin: 0;
-    font-weight: normal; }
+    font-weight: 400; }
   .person__title {
-    color: #545454;
+    color: #FA709A;
     font-size: 18px;
     font-style: italic;
-    font-weight: normal;
+    font-weight: 500;
     -webkit-text-fill-color: transparent; }
     @supports (-webkit-background-clip: text) {
       .person__title {
