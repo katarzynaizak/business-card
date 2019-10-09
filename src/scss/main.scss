@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i&display=swap&subset=greek-ext');
 
 @keyframes waves {
   0% { border-radius: 30% 70% 70% 30%/30% 30% 70% 70%; }
@@ -24,6 +24,7 @@ body {
   display: flex;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: 400;
   justify-content: center;
   min-height: 100vh;
   padding: 16px;
@@ -41,6 +42,11 @@ body {
   width: 100%;
 }
 
+.link {
+  color: $link;
+  text-decoration: none;
+}
+
 .person {
   align-items: flex-start;
   display: flex;
@@ -50,7 +56,7 @@ body {
   }
   &__distinction {
     color: $distinction;
-    font-weight: normal;
+    font-weight: 300;
   }
   &__header {
     font-family: Arial, Helvetica, sans-serif;
@@ -60,19 +66,20 @@ body {
     }
   }
   &__link {
-    color: $link;
+    color: $personLink;
+    font-weight: 500;
     text-decoration: none;
   }
   &__name {
     font-size: 36px;
     margin: 0;
-    font-weight: normal;
+    font-weight: 400;
   }
   &__title {
-    color: #545454;
+    color: $gradientEnd;
     font-size: 18px;
     font-style: italic;
-    font-weight: normal;
+    font-weight: 500;
     -webkit-text-fill-color: transparent;
     @supports(-webkit-background-clip:text) {
       background: linear-gradient(to right,$gradientStart,$gradientEnd);
