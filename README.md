@@ -1,6 +1,6 @@
 # Wizytówka
 
-Mała wizytówka, która w widoku mobilnym zmienia układ na pionowy - [widok on-line](http://www.kasiaizak.pl)
+Mała wizytówka, która w widoku mobilnym zmienia układ na pionowy - [widok on-line](https://www.kasiaizak.pl)
 
 ## Wykorzystane technologie
 
