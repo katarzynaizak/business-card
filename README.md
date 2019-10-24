@@ -1,10 +1,12 @@
+![cover](https://raw.githubusercontent.com/kasiaizak/business-card/master/src/assets/img/cover.png)
+
 # Wizytówka
 
-Mała wizytówka, która w widoku mobilnym zmienia układ na pionowy - [widok on-line](https://www.kasiaizak.pl)
+Wizytówka, która w widoku mobilnym zmienia układ na pionowy - [widok on-line](https://www.kasiaizak.pl)
 
-## Wykorzystane technologie
+## Użyte technologie
 
-HTML5 i CSS3 (flexbox) z użyciem preprocesora SASS.
+HTML5 i CSS3 (w tym Flexbox) z użyciem preprocesora Sass.
 
 ## Podgląd strony
 
@@ -30,4 +32,4 @@ Po sklonowaniu repozytorium na swój komputer wchodzimy do głównego katalogu p
 
 #### Kończenie pracy
 
-Aby przerwać pracę *gulps* wciskamy kombinację klawiszy **CTRL** + **C**.
+Aby przerwać pracę *gulp* wciskamy kombinację klawiszy **CTRL** + **C**.
