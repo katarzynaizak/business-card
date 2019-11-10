@@ -10,7 +10,7 @@ HTML5 i CSS3 (w tym Flexbox) z użyciem preprocesora Sass.
 
 ## Podgląd strony
 
-![Screenshot](https://raw.githubusercontent.com/kasiaizak/business-card/master/github/screenshot.png)
+![Screenshot](https://github.com/kasiaizak/business-card/blob/master/github/screenshot.jpg)
 
 ## Uruchomienie strony lokalnie z podglądem zmian na żywo (dla developerów korzystających z Node.js)
 
