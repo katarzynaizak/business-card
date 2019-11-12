@@ -41,8 +41,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -209,8 +208,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -241,8 +239,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -329,29 +326,20 @@ template {
     border-radius: 70% 30% 30% 70%/70% 70% 30% 30%; } }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 *, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
+  box-sizing: inherit; }
 
 body {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #2C2141;
-  background-image: -o-linear-gradient(315deg, #FEE140 0%, #FA709A 100%);
   background-image: linear-gradient(135deg, #FEE140 0%, #FA709A 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   min-height: 100vh;
   padding: 16px; }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -371,11 +359,7 @@ body {
   text-decoration: none; }
 
 .person {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: flex-start;
   display: flex; }
   .person__bio {
     line-height: 22px;
@@ -405,8 +389,6 @@ body {
     -webkit-text-fill-color: transparent; }
     @supports (-webkit-background-clip: text) {
       .person__title {
-        background: -webkit-gradient(linear, left top, right top, from(#FEE140), to(#FA709A));
-        background: -o-linear-gradient(left, #FEE140, #FA709A);
         background: linear-gradient(to right, #FEE140, #FA709A);
         -webkit-background-clip: text;
                 background-clip: text;
@@ -415,11 +397,8 @@ body {
         -webkit-text-fill-color: transparent; } }
   @media screen and (max-width: 514px) {
     .person {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+      flex-wrap: wrap;
+      justify-content: center; } }
 
 .photo {
   margin: 0 32px 16px 0;
