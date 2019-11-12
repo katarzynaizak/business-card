@@ -47,6 +47,7 @@
     ]
   },
   "dependencies": {
-    "browser-update": "^3.3.8"
+    "browser-update": "^3.3.8",
+    "eslint": "^6.6.0"
   }
 }
